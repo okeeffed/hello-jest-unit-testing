@@ -1,4 +1,3 @@
-const R = require("ramda");
 const { add, impureAdd, curryAdd, add2, add7, add10 } = require("./math");
 const { add19 } = require("./composedMath");
 const impurity = require("./impurity");
@@ -20,7 +19,7 @@ afterEach(() => {
 
 describe("add functionality", () => {
   test("uncurried add works as expected", () => {
-    expect(add(1, 2)).toEqual(3);
+    expect(add(1, 4)).toEqual(5);
   });
 
   test("curried add works as expected", () => {
